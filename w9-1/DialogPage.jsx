@@ -3,11 +3,10 @@ import Dialog from "./Dialog";
 
 function WarningDialog(props) {
     return (
-        <Dialog content={props.content} color={props.backgroundColor}>
+        <Dialog content={props.content} backgroundColor={props.backgroundColor}>
             <div>
                 <button onClick={() => { alert("경고!"); }}>누르지 마세요</button>
             </div>
-
         </Dialog>
     )
 }
@@ -15,7 +14,7 @@ function WarningDialog(props) {
 
 function WelcomeDialog(props) {
     return (
-        <Dialog content={props.content} color={props.backgroundColor}>
+        <Dialog content={props.content} backgroundColor={props.backgroundColor}>
             <div>
                 <h1>테스트해보세요</h1>
             </div>
@@ -26,7 +25,7 @@ function WelcomeDialog(props) {
 
 function ErrorDialog(props) {
     return (
-        <Dialog content={props.content} color={props.backgroundColor}>
+        <Dialog content={props.content} backgroundColor={props.backgroundColor}>
             <div>
                 <h1>버튼을 클릭해보세요</h1>
                 <button onClick={() => { alert("에러 발생!"); }}>누르세요</button>
@@ -38,7 +37,7 @@ function ErrorDialog(props) {
 
 function NoticeDialog(props) {
     return (
-        <Dialog content={props.content} color={props.backgroundColor}>
+        <Dialog content={props.content} backgroundColor={props.backgroundColor}>
             <h1>기말고사는 사실 없습니다.</h1>
             <input type="checkbox" />확인 했으면 체크를 하세요.
         </Dialog>
